@@ -57,3 +57,5 @@ document.body.addEventListener('keypress', (event) => {
     fetch_wheather(apikey, testInputElement.value);
   }
 })
+
+fetch_wheather(apikey, "Amassoma");
