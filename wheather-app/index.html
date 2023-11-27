@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Wheather App</title>
+    <link rel="stylesheet" href="wheather.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!--wheather card container -->
+    <div class="wheather-card-container">
+      <div class="search-container">
+        <input type="text" class="user-input js-input" placeholder="Enter City" spellcheck="false">
+        <button class="search-icon-container js-search-btn">
+          <img src="images/search.png" alt="">
+        </button>
+      </div>
+      <div> 
+        <p class="error">Invalid city name</p>  
+      </div>
+
+      <!--wheather information section-->
+      <div class="wheather-info">
+        <div class="wheather-type">
+          <img class="js-cloud" src="images/clear.png" alt="">
+        </div>
+
+        <h1 class="wheather-temp js-temp">7&degC</h1>
+        <div class="wheather-city js-city">New York</div>
+
+        <div class="wheather-intensity">
+          <div class="humidity-container">
+            <img src="images/humidity.png" alt="">
+            <div class="humidity-value">
+              <h3 class="js-humidity">48%</h3>
+              <h4>humidity</h4>
+            </div>
+          </div>
+          <div class="wind-speed-container">
+            <img src="images/wind.png" alt="">
+            <div class="wind-speed-value">
+              <h3 class="js-wind-speed">10.34kmph</h3>
+              <h4>Wind Speed</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="wheather.js"></script>
+  </body>
+</html>
