@@ -41,7 +41,7 @@ function selectElement(speed, temp, hum, cloud)
   tempElement.innerHTML = Math.round(temp) + `&degC`;
   speedElement.innerHTML = speed + `kmph`;
   humElement.innerHTML = Math.round(hum) + `%`;
-  cloudElement.setAttribute('src', `images/${cloud}.png`)
+  cloudElement.setAttribute('src', `./images/${cloud}.png`)
 }
 
 /** hanlde search feature */
