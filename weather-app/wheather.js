@@ -9,7 +9,7 @@ const speedElement = document.querySelector('.js-wind-speed');
 const humElement = document.querySelector('.js-humidity');
 const cloudElement = document.querySelector('.js-cloud')
 const errorElement = document.querySelector('.error');
-const weatherBody = document.querySelector('.wheather-info');
+const weatherBody = document.querySelector('.weather-info-container');
 
 async function fetch_wheather(apikey, city)
 {
@@ -49,12 +49,15 @@ function selectElement(speed, temp, hum, cloud)
 searchbtn.addEventListener('click', () => {
   const testInputElement = document.querySelector('.js-input');
   fetch_wheather(apikey, testInputElement.value);
+  testInputElement.value = ''
 })
 
 document.body.addEventListener('keypress', (event) => {
+  errorElement.style.display = "none";
   if (event.key == "Enter")
   {
     fetch_wheather(apikey, testInputElement.value);
+    testInputElement.value = ''
   }
 })
 
