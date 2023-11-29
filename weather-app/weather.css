@@ -13,7 +13,7 @@ body{
   align-items: center;
 }
 .weather-card-container{
-  max-width: 350px;
+  max-width: 300px;
   box-sizing: border-box;
   /* margin: 0 auto; */
   /* background-color: red; */
