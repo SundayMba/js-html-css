@@ -2,7 +2,8 @@
 <html>
   <head>
     <title> Wheather App</title>
-    <link rel="stylesheet" href="wheather.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -10,11 +11,11 @@
 
   <body>
     <!--wheather card container -->
-    <div class="wheather-card-container">
+    <div class="weather-card-container">
       <div class="search-container">
         <input type="text" class="user-input js-input" placeholder="Enter City" spellcheck="false">
         <button class="search-icon-container js-search-btn">
-          <img src="images/search.png" alt="">
+          <img class="search-icon" src="images/search.png" alt="">
         </button>
       </div>
       <div> 
@@ -22,25 +23,26 @@
       </div>
 
       <!--wheather information section-->
-      <div class="wheather-info">
-        <div class="wheather-type">
-          <img class="js-cloud" src="images/clear.png" alt="">
+      <div class="weather-info-container">
+        <div class="weather-type">
+          <img class="cloud-img js-cloud" src="images/clear.png" alt="">
         </div>
 
-        <h1 class="wheather-temp js-temp">7&degC</h1>
-        <div class="wheather-city js-city">Amassoma</div>
+        <h1 class="weather-temp js-temp">7&degC</h1>
+        <div class="weather-city js-city">Amassoma</div>
 
-        <div class="wheather-intensity">
+        <div class="weather-intensity">
+
           <div class="humidity-container">
-            <img src="images/humidity.png" alt="">
-            <div class="humidity-value">
+            <img class="humidity-img" src="images/humidity.png" alt="">
+            <div class="humidity-info">
               <h3 class="js-humidity">48%</h3>
               <h4>humidity</h4>
             </div>
           </div>
           <div class="wind-speed-container">
-            <img src="images/wind.png" alt="">
-            <div class="wind-speed-value">
+            <img class="wind-img" src="images/wind.png" alt="">
+            <div class="wind-info">
               <h3 class="js-wind-speed">10.34kmph</h3>
               <h4>Wind Speed</h4>
             </div>

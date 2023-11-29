@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
 }
 .wheather-card-container{
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
